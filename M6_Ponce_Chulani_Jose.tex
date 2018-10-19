@@ -146,19 +146,65 @@ donde $N_B$ es el número total de bosones del sistema, que suponemos constante.
 \end{equation}
 
 
+En la figura \ref{f:comparacion} hemos resuelto el espectro del Hamiltoniano fijando un término a la unidad y variando el otro. Cuando se da el caso de que $U\gg J$ se dice que estamos en el régimen de interacción fuerte y por tanto no hay efecto túnel. Cuando ocurre el caso contrario se le llama régimen de interacción débil.
+
 
 \begin{figure} [h]
  \centering
   \subfloat[]{
    \includegraphics[width=0.35\textwidth, angle=270]{Long_Strong_NL4_NB4_J1.eps}}
-  \subfloat[]{
+  \subfloat[]{ 
    \includegraphics[width=0.35\textwidth, angle=270]{Short_Weak_NL4_NB4_U1.eps}}
-  \caption{}
+  \caption{Espectro del Hamiltoniano para valores de (a) $J=1$, $U$ varía y (b) $U=1$, $J$ varía para $N_L=N_B=4$.}
  \label{f:comparacion}
 \end{figure}
 
 
- 
+En las figuras \ref{f:comparacion} puede observarse que para diferentes valores de $J$ y $U$ existen el mismo número de estados cuando se da la situación para que se esté en el mismo régimen. Además puede verse como en el estado de superfluido hay muchos más estados no degenerados que en el de aislante.
+
+\section{Dinámica del sistema}
+
+En nuestro caso el Hamiltoniano es independiente del tiempo y por tanto podemos calcular evolución temporal desarrollando directamente en la base del espacio de Fock. De manera que el resultado quedaría
+
+\begin{equation}
+  \langle\phi(t)|N_k|\phi(t)\rangle=\sum_{i,j}^{D}c_i^*c_j\langle\psi_i|N_k|\psi_j\rangle \cos(\frac{\Delta E_{ij}t}{\hbar})
+\end{equation}
+
+donde los $|\psi(t)\rangle$ son los autoestados del Hamiltoniano Bose-Hubbard.
+
+Para un sistema con tres pozos potenciales y 6 bosones con estado inicial preparado de manera que todos se encuentren en el mismo pozo potencial y con suficiente energía para que puedan tunelear, nos encontramos con la evolución dinámica mostrada en la figura \ref{f:dinamica}. En ella se han representado los valores esperados del operador número en cada uno de los pozos potenciales. Sin embargo, cabe destacar que no aparece por ningún lado los datos referentes al segundo pozo potencial. La raíz de este detalle es la condición de contorno periódica que habíamos impuesto: como todos los bosones están en un mismo pozo potencial les es indiferente tunelear hacia la derecha o hacia la izquierda, puesto que en ambos sitios hay el mismo número de bosones y les es energéticamente idéntico. Es decir, el valor esperado del operador número del segundo y tercer pozo potencial están degenerados.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=8cm,angle=270]{Prop_600_NL3_NB6_U1_J10.eps}
+  \caption{Dinámica del sistema para $N_L=3$, $N_B=6$. Se prepara el sistema con todos los bosones en el primer mínimo. Se les ha dado valores $U=1$ y $J=10$.}
+  \label{f:dinamica}
+\end{figure}
+\noindent
+
+
+\section{Conclusiones}
+
+En este  pequeño artículo hemos puesto de manifiesto uno de los modelos más sencillos que se pueden encontrar en el campo de los átomos fríos atrapados. Como hemos dicho ya, es un campo que ahora mismo es muy popular e importante para la teconología e información cuántica.
+
+Fijémonos que en esteartículo hemos hablado exclusivamente de la ecuación de Schroedinger independiente del tiempo y de la evolución temporal a lo largo de la red. Pero no hemos hablado en absoluto de la interacción átomo-luz con los rayos láseres. Se puede hacer, y de hecho se hace, excitar a las partículas con otros láseres a un estado diferente, obteniéndose átomos Rydberg. Estos átomos se comportan curiosamente como fermiones aunque sean bosones, y antes de que se produzca la dinámica que aquí hemos visto, se pueden tomar medidas sobre entrelazamiento cuántico bastantes buenas.
+
+Un siguiente paso de este artículo puede ser tratar redes más complejas, de otras geometrías y dimensiones. Así como también se podría hacer variar los diferentes parámetros del Hamiltoniano a lo largo del tiempo y ver si la función de onda colapsaría en algún momento.
+
+Por último, hablar de la dimensión del sistema. En cuántica los sistemas viven dentro del espacio de Hilbert y su dimensión es bastante más alta que en los sistemas cuánticos. Concretamente, en este modelo la dimensión viene dada por
+
+\begin{equation}
+  D=\frac{(N_L+N_B-1)!}{(N_L-1)!N_B!}
+\end{equation}
+
+De manera que la dimensión de nuestro sistema escala de la forma en la que se indica en la tabla \ref{t:dimension}.
+
+
+
+
+
+  
 Este tipo de redes son muy versátiles: se pueden conseguir muchas geometrías diferentes casi sin defectos, e incluso puede cambiarse su forma y la intensidad de los mínimos de potencial en el curso de un experimento. 
 
 
