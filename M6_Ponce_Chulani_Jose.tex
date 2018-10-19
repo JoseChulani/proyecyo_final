@@ -64,6 +64,8 @@ Ultracold atoms, Bose-Hubbard model, suprfluid, Mott insulattor, tunneling.
 
 \section{Introducción}
 
+Este tipo de redes son muy versátiles: se pueden conseguir muchas geometrías diferentes casi sin defectos, e incluso puede cambiarse su forma y la intensidad de los mínimos de potencial en el curso de un experimento. 
+
 
 \section{El sistema}
 
@@ -198,16 +200,58 @@ Por último, hablar de la dimensión del sistema. En cuántica los sistemas vive
   D=\frac{(N_L+N_B-1)!}{(N_L-1)!N_B!}
 \end{equation}
 
-De manera que la dimensión de nuestro sistema escala de la forma en la que se indica en la tabla \ref{t:dimension}.
+De manera que la dimensión de nuestro sistema escala de la forma en la que se indica en la tabla \ref{t:dimension}. De manera que supone un gran esfuerzo computacional resolver sistemas muy grandes de tamaño y de bosones.
 
 
-
-
-
+\begin{table}[h]
+  \centering
   
-Este tipo de redes son muy versátiles: se pueden conseguir muchas geometrías diferentes casi sin defectos, e incluso puede cambiarse su forma y la intensidad de los mínimos de potencial en el curso de un experimento. 
+  \begin{tabular}{|c||c||c|}
+    
+    \hline
+    $N_L$ & $N_B$ & $D$ \\
+    \hline
+    4 & 4 & 35 \\
+    \hline
+    6 & 6 & 432 \\
+    \hline
+    6 & 12 & 6188 \\
+    \hline
+  \end{tabular}
+  \label{t:dimension}
+\end{table}
+
+
+Para terminar, expongo aquí una matriz sobre un tema de estabilidad de matrices usados en ecología, que no tiene nada que ver con el tema, pero sirve como una sgunda tabla para el trabajo.
+
+\begin{equation}
+  \left(
+  \begin{array}{cccccc}
+    0 & \cdots & 0 & -\alpha_{11}^* & \cdots & -\alpha_{1m}^* \\
+    \vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\
+    0 & \cdots & 0 & -\alpha_{m1}^* & \cdots & -\alpha_{mm}^* \\
+    \beta_{11}^* & \cdots & \beta_{1m}^* & 0 & \cdots & 0 \\
+    \vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\
+    \beta_{m1}^* & \cdots & \beta_{mm}^* & 0 & \cdots & 0 
+  \end{array}
+  \right)
+\end{equation}
+
+Este último se ha hecho como una ecuación.
 
 
 
+ \section{Referencias}
+
+\bibliography{base_modulo_5}
+\bibliographystyle{plain}
+
+\nocite{Smith}
+\nocite{Galindo}
+\nocite{Sakurai}
+\nocite{Laser}
+\nocite{Ashcroft}
+\nocite{Caos}
+\nocite{Yo}
 
 \end{document}
