@@ -72,11 +72,18 @@
   pages   = {9095-9100},
 }
 
-@PhdThesis{,
+@PhdThesis{Caos,
   author = {M. Lubasch},
   title  = {Quantum chaos and entanglement in the Bose-Hubbard model},
   school = {Institut für Theoretische Physik in Heidelberg},
   year   = {2009},
+}
+
+@MastersThesis{Yo,
+  author = {J. P. Chulani},
+  title  = {Ultracold Atoms Trapped in Optical Lattices: Bose-Hubbard Model},
+  school = {Granada University},
+  year   = {2018},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
