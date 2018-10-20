@@ -25,6 +25,7 @@
 \usepackage{xtab}
 \usepackage{subfig}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \usepackage[spanish]{babel}
 
@@ -40,6 +41,8 @@
 
 \begin{abstract}
   %URL del repositorio
+  \url{https://github.com/JoseChulani/proyecyo_final}
+  
   En este artículo vamos a tratar brevemente un campo de la física cuántica que está en auge: el de los \'atomos y m\'oleculas ultrafr\'ias. Nos centraremos en el modelo de Bose-Hubbard para estudiar algunas de sus propiedades. Estudiamos casos concretos de la ecuación de Schroedinger independiente y dependiente del tiempo. Vemos como la dinámica depende de las simetrías del sistema y de la función de onda inicial.
 \end{abstract}
 
@@ -52,6 +55,8 @@
 
 \begin{abstract}
   %URL del repositorio
+  \url{https://github.com/JoseChulani/proyecyo_final}
+  
   In the current proyect we give a brief review of an investigation field of quantum physics that is very popular nowadays: the ultracold atoms or molecules. Specifically we study some properties of the Bose-Hubbard model. We study specific systemsforthe time independent and dependent Schroedinger equation. We demonstrate that the dynamic's system depends on the Hamiltonian symmetries and on the initial wave function.
 \end{abstract}
 
@@ -64,14 +69,18 @@ Ultracold atoms, Bose-Hubbard model, suprfluid, Mott insulattor, tunneling.
 
 \section{Introducción}
 
-Sabemos que en física cuántica hay dos tipos de partículas: los bosones y fermiones. Con espines entero y semientero respectivamente, su propiedad fundamental es que pueden existir todos los bosones que queramos en el mismo estado cuántico mientras que los fermiones no. Por tanto esperaremos encontrar propiedades y estados bosónicos curiosos. También sabemos que toda partícula masiva lleva asociada una longitud de onda, y que, a mayor longitud de onda mayores efectos cuánticos podremos observar. Así, necesitaremos temperaturas realmente frías para que la longitud de onda de las partículas sean lo suficientemente altas como para encontrar efectos cuánticos.
+Sabemos que en física cuántica hay dos tipos de partículas: bosones y fermiones. Con espines entero y semientero respectivamente, sus propiedades fundamentales es que pueden existir todos los bosones que queramos en el mismo estado cuántico mientras que los fermiones no. Por tanto esperaremos encontrar propiedades y estados bosónicos curiosos. También sabemos que toda partícula masiva lleva asociada una longitud de onda, y que, a mayor longitud de onda mayores efectos cuánticos podremos observar. Así, necesitaremos temperaturas realmente frías para que la longitud de onda de las partículas sean lo suficientemente altas como para encontrar efectos cuánticos.
 
-En este  trabajo
+En este  trabajo vamos a exponer brevemente uno de los modelos más sencillos de átomos fríos atrapados en redes ópticas, el modelo Bose-Hubbard. Nuestro sistema consta de una red óptica generada por interferencias de láseres en la cual cargamos nuestros átomos, que serán bosones. Este tipo de redes son muy versátiles: se pueden conseguir muchas geometrías diferentes casi sin defectos, e incluso puede cambiarse su forma y la intensidad de los mínimos de potencial en el curso de un experimento, por lo que su estudio teórico puede llegar a ser de gran utilidad en los experimentos. Vamos a estudiar el caso monodimensional para diferentes número de partículas y de pozos potenciales, estudiando el espectro del Hamiltoniano sin evolucionar temporalmente el sistema y luego su dinámica.
+
 
 %CREO QUE ESTO ES EL ESTADO DEL ARTE
-\textir{Estado del arte}
+\textit{Estado del arte}
+EL desarrollo de este tipo de sistemas comenzó a mitades de 1970 con el uso de láseres para enfriar partículas. Con este tipo de técnicas de enfriamiento láser se han conseguido temperaturas realmente bajas, del orden de micro Kelvins. Sin embargo no es lo suficientemente frío para poder observar efectos cuánticos, y usualmente se consiguen enfriar por debajo de los nano Kelvins por trampas magnéticas. Una vez que los átomos están suficiente fríos se cargan a la red óptica por métodos fácilmente accesibles en el experimento.
 
-Este tipo de redes son muy versátiles: se pueden conseguir muchas geometrías diferentes casi sin defectos, e incluso puede cambiarse su forma y la intensidad de los mínimos de potencial en el curso de un experimento. 
+Este tipo de sistemas están siendo muy estudiados recienmente por sus múltiples aplicaciones a la información y tecnologías cuánticas, además de ser sistemas en los que los efectos cuánticos son bastantes apreciables.
+
+Nuestro sistema fue propuesto por Bose en 1989, como hemos mencionado es el más sencillo de todos, es una aplicación de un modelo anterior, en 1960, propuesto para fermiones. Tuvo un gran éxtio y se ha estudiado bastante, desde el espectro de un Hamiltoniano independiente del tiempo hasta la búsqueda de caos y entrelazamiento en el sistema.
 
 
 \section{El sistema}
